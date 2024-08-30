@@ -1,5 +1,5 @@
 
-namespace MinimalApi.DTOs;
+namespace minimal_api.DTOs;
 public record VeiculoDTO
 {
     public string Nome {get; set;} = default!;

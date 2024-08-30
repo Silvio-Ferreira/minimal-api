@@ -1,9 +1,13 @@
-using MinimalApi.Dominio.Entidades;
-using MinimalApi.DTOs;
+using minimal_api.Dominio.Entidades;
+using minimal_api.DTOs;
 
-namespace MinimalApi.Dominio.Interfaces;
+namespace minimal_api.Dominio.Interfaces;
 
 public interface IAdministradorServico{
     Administrador? Login(LoginDTO loginDTO);
+    Administrador? Incluir(Administrador administrador);
+    Administrador? BuscaPorId(int  id);
+    List<Administrador> Todos(int?  pagina);
+
 
 }
